@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans+Condensed:wght@300&family=Roboto+Slab:wght@500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Bigelow Rules', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: cornsilk;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.bs1 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: chocolate;
+}
+
+.header {
+    padding: 7px;
+}
+
+.content {
+    min-height: 93vh;
+}
