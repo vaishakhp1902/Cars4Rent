@@ -46,7 +46,7 @@ function Home() {
            </div>
 
            <div>
-           <Button className='btn-1 mr-2'>Book Now</Button>
+           <button className='btn-1 mr-2'>Book Now</button>
            
            
            </div>

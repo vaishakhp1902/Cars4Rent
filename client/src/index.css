@@ -24,7 +24,7 @@ code {
 h1 {
     font-size: 30px;
     font-weight: bold;
-    color: chocolate;
+    color:black;
 }
 
 p{
@@ -45,10 +45,15 @@ p{
 
 .btn-1 {
     box-shadow: none !important;
-    background-color: bisque;
-    color: chocolate !important;
-    border: 1px solid red !important;
+    background-color: white;
+    color: black!important;
+    border: 1px solid black !important;
+    padding: 5px !important;
 
+}
+
+.button{
+    padding: 5px;
 }
 
 .car {
@@ -71,12 +76,24 @@ p{
 
 
 .car-img {
-    height: 180px;
-    width :auto;
+    
     border-radius: 5px;
     transform: translateY(-50px);
+    max-width:100%;
+    max-height:100%;
 
 }
+.lambo-img {
+    height: 200px;
+    width: auto;
+    opacity: 0.5;
+}
+.ford-img {
+    height:200%;
+    width:auto;
+    opacity: 0.5;
+}
+
 
 .car-content {
     transform: translateY(-200px);
@@ -84,4 +101,35 @@ p{
     transition: 0.3s;
 }
 
+
+.login {
+    background-image: url('https://imagessports19.s3.ap-south-1.amazonaws.com/Ford-Mustang-V8-GT-HP.jpeg');
+    background-position:center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.login label{
+    font-weight: bold;
+}
+
+.login h1 {
+    font-weight: bold;
+}
+
+.login-form {
+    background-color:#d2e4ee;
+    opacity: 0.5;
+}
+
+.login-logo {
+    position:relative;
+    font-size: 50px;
+    opacity: 0.5;
+}
+
+.login a {
+    color:black;
+    font-weight: bold;
+}
 
