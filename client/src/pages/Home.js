@@ -1,6 +1,7 @@
 import React from 'react'
 import DefaultLayout from '../components/DefaultLayout'
 import { getAllCars } from '../redux/actions/carsAction'
+//import Loader from '../components/Loader'
 
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
@@ -14,6 +15,7 @@ import { Button,Row,Col } from 'antd'
 function Home() {
 
     const {cars} = useSelector(state=>state.carsReducer)
+    //const {loading} = useSelector(state=>state.alertsReducer)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -22,6 +24,11 @@ function Home() {
 
     return (
         <DefaultLayout>
+        {/**  {loading == true && (<Loader/>)} */}
+
+        
+        
+        
         <Row justify='center' gutter={16} className='mt-5'>
 
         {cars.map(car=>{
@@ -39,7 +46,7 @@ function Home() {
            </div>
 
            <div>
-           <button className='btn-1 mr-2'>Book Now</button>
+           <Button className='btn-1 mr-2'>Book Now</Button>
            
            
            </div>
