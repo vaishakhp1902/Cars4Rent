@@ -27,10 +27,30 @@ h1 {
     color: chocolate;
 }
 
+p{
+    margin: 5px !important;
+    text-align: left;
+    padding: 0%;
+}
+
 .header {
     padding: 7px;
 }
 
 .content {
     min-height: 93vh;
+}
+
+.car-img {
+    height: 180px;
+    width :auto;
+    border-radius: 5px;
+}
+
+.btn-1 {
+    box-shadow: none !important;
+    background-color: bisque;
+    color: chocolate !important;
+    border: 1px solid red !important;
+
 }
