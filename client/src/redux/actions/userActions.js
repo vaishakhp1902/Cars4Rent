@@ -6,8 +6,10 @@ export const userLogin=(reqObj)=>async dispatch=>{
     dispatch({type: 'LOADING' , payload:true})
 
     try {
+        // eslint-disable-next-line 
         const response = await axios.post('/api/users/login' , reqObj)
-        console.log(response)
+        //console.log(response)
+        
         localStorage.setItem('user' , JSON.stringify(response.data))
         message.success('Login success')
         dispatch({type: 'LOADING' , payload:false})
@@ -27,8 +29,9 @@ export const userRegister=(reqObj)=>async dispatch=>{
     dispatch({type: 'LOADING' , payload:true})
 
     try {
+        // eslint-disable-next-line 
         const response = await axios.post('/api/users/register' , reqObj)
-        console.log(reqObj)
+        
         message.success('Registration successfull')
         setTimeout(() => {
             window.location.href='/login'

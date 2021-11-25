@@ -10,7 +10,7 @@ const dispatch = useDispatch()
   function onFinish(values) {
 
     dispatch(userLogin(values))
-    console.log(values)
+    
 }
   return (
     <div className="login">

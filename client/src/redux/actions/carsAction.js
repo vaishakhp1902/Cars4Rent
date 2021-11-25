@@ -8,7 +8,7 @@ export const getAllCars = () => async (dispatch) => {
       '/api/cars/getallcars'
     );
 
-    console.log(response)
+    
     dispatch({ type: "GET_ALL_CARS", payload: response.data });
     dispatch({ type: "LOADING", payload: false });
   } catch (error) {

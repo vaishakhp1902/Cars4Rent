@@ -10,7 +10,7 @@ function Register() {
 
     function onFinish(values) {
         
-        console.log(values)
+        
         dispatch(userRegister(values))
     }
   return (
