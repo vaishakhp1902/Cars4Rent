@@ -1,16 +1,18 @@
-import axios from 'axios';
+import axios from "axios";
 
-export const getAllCars=()=>async dispatch=>{
+export const getAllCars = () => async (dispatch) => {
+  dispatch({ type: "LOADING", payload: true });
 
-    dispatch({type: 'LOADING' , payload:true})
+  try {
+    const response = await axios.get(
+      '/api/cars/getallcars'
+    );
 
-    try {
-        const response = await axios.get('http://localhost:5001/api/cars/getallcars')
-        dispatch({type: 'GET_ALL_CARS', payload:response.data})
-        dispatch({type: 'LOADING' , payload:false})
-    } catch (error) {
-        console.log(error)
-        dispatch({type: 'LOADING' , payload:false})
-    }
-
-}
+    console.log(response)
+    dispatch({ type: "GET_ALL_CARS", payload: response.data });
+    dispatch({ type: "LOADING", payload: false });
+  } catch (error) {
+    console.log(error);
+    dispatch({ type: "LOADING", payload: false });
+  }
+};

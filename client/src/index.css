@@ -1,135 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans+Condensed:wght@300&family=Roboto+Slab:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans+Condensed:wght@300&family=Roboto+Slab:wght@500&display=swap");
 
 body {
-    margin: 0;
-    font-family: 'Bigelow Rules', cursive;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: cornsilk;
+  margin: 0;
+  font-family: "Bigelow Rules", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Slab", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: cornsilk;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .bs1 {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: bold;
-    color:black;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
 }
 
-p{
-    margin: 5px !important;
-    text-align: left;
-    padding: 0%;
+p {
+  margin: 5px !important;
+  text-align: left;
+  padding: 0%;
 }
 
 .header {
-    padding: 7px;
+  padding: 7px;
 }
 
 .content {
-    min-height: 93vh;
+  min-height: 93vh;
 }
-
-
 
 .btn-1 {
-    box-shadow: none !important;
-    background-color: white;
-    color: black!important;
-    border: 1px solid black !important;
-    padding: 5px !important;
-
+  box-shadow: none !important;
+  background-color: white;
+  color: black !important;
+  border: 1px solid black !important;
+  padding: 5px !important;
 }
 
-.button{
-    padding: 5px;
+.button {
+  padding: 5px;
 }
 
 .car {
-
-    border-radius: 5px;
-    margin-top: 100px;
-    height: 155px;
-    transition: 0.3;
-
+  border-radius: 5px;
+  margin-top: 100px;
+  height: 155px;
+  transition: 0.3;
 }
 
 .car:hover {
-    height: 220px;
+  height: 220px;
 }
 
-.car:hover > .car-content{
-    opacity: 1;
-    transform:translateY(-40px)
+.car:hover > .car-content {
+  opacity: 1;
+  transform: translateY(-40px);
 }
-
 
 .car-img {
-    
-    border-radius: 5px;
-    transform: translateY(-50px);
-    max-width:100%;
-    max-height:100%;
-
+  border-radius: 5px;
+  transform: translateY(-50px);
+  max-width: 100%;
+  max-height: 100%;
 }
 .lambo-img {
-    height: 200px;
-    width: auto;
-    opacity: 0.5;
+  height: 200px;
+  width: auto;
+  opacity: 0.5;
 }
 .ford-img {
-    height:200%;
-    width:auto;
-    opacity: 0.5;
+  height: 200%;
+  width: auto;
+  opacity: 0.5;
 }
-
 
 .car-content {
-    transform: translateY(-200px);
-    opacity: 0;
-    transition: 0.3s;
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.3s;
 }
-
 
 .login {
-    background-image: url('https://imagessports19.s3.ap-south-1.amazonaws.com/Ford-Mustang-V8-GT-HP.jpeg');
-    background-position:center;
-    position: relative;
-    min-height: 100vh;
+  background-image: url("https://imagessports19.s3.ap-south-1.amazonaws.com/Ford-Mustang-V8-GT-HP.jpeg");
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
 }
 
-.login label{
-    font-weight: bold;
+.login label {
+  font-weight: bold;
 }
 
 .login h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .login-form {
-    background-color:#d2e4ee;
-    opacity: 0.5;
+  background-color: #d2e4ee;
+  opacity: 0.5;
 }
 
 .login-logo {
-    position:relative;
-    font-size: 50px;
-    opacity: 0.5;
+  position: relative;
+  font-size: 50px;
+  opacity: 0.5;
 }
 
 .login a {
-    color:black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
-

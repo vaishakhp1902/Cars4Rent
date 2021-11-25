@@ -1,13 +1,12 @@
-import React from 'react'
-import {Spin} from 'antd'
+import React from "react";
+import { Spin } from "antd";
 
- function Loader() {
-    return (
-        <div>
-        <Spin />
-            
-        </div>
-    )
+function Loader() {
+  return (
+    <div>
+      <Spin />
+    </div>
+  );
 }
 
-export default Loader
+export default Loader;
