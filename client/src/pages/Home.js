@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
 import { Row, Col } from "antd";
+import {Link} from 'react-router-dom'
 
 function Home() {
   const { cars } = useSelector((state) => state.carsReducer);
@@ -35,7 +36,7 @@ function Home() {
                   </div>
 
                   <div>
-                    <button className="btn-1 mr-2">Book Now</button>
+                    <button className="btn-1 mr-2"><Link to ={`/booking/${car.id}`}> Book Now</Link></button>
                   </div>
                 </div>
               </div>
