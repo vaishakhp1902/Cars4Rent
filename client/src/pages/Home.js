@@ -36,7 +36,7 @@ function Home() {
                   </div>
 
                   <div>
-                    <button className="btn-1 mr-2"><Link to ={`/booking/${car.id}`}> Book Now</Link></button>
+                    <button className="btn-1 mr-2"><Link to ={`/booking/${car._id}`}> Book Now</Link></button>
                   </div>
                 </div>
               </div>
