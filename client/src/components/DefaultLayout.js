@@ -3,7 +3,6 @@ import { Menu, Dropdown, Button,Row,Col } from "antd";
 
 function DefaultLayout(props) {
   const user = JSON.parse(localStorage.getItem("user"));
-  console.log(user);
 
   const menu = (
     <Menu>

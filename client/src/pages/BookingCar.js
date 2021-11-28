@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import { getAllCars } from "../redux/actions/carsAction";
 import { Row,Col,Divider,DatePicker,Checkbox } from "antd";
 import moment from 'moment'
+import { bookCar } from "../redux/actions/bookingActions";
+
 
 const {RangePicker} = DatePicker
 
@@ -27,6 +29,7 @@ function BookingCar({match}) {
       setCar(cars.find((o) => o._id === match.params.carid));
     }
     
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[cars]);
 
 
@@ -36,6 +39,7 @@ function BookingCar({match}) {
     if(driver){
       setTotalAmount(totalAmount+(30*totalHours))
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [driver,totalHours])
 
 
@@ -47,6 +51,23 @@ function BookingCar({match}) {
     setTo(moment(values[1]).format('MMM DD yyyy HH:MM'))
     setTotalHours(values[1].diff(values[0], 'hours'))
     
+  }
+
+  function bookNow() {
+    const reqObj = {
+      user:JSON.parse(localStorage.getItem(`user`))._id,
+      car:car._id,
+      totalHours,
+      totalAmount,
+      driverRequired: driver,
+      bookedTimeSlots: {
+        from,to
+      }
+    
+    }
+
+    dispatch(bookCar(reqObj))
+
   }
   return (
     <DefaultLayout>
@@ -83,6 +104,7 @@ function BookingCar({match}) {
        }}>Driver Required ?</Checkbox>
 
        <h3>Total Amount : {totalAmount}</h3>
+       <button className='btn-1' onClick={bookNow}>Book Now</button>
 
         </div>
 
