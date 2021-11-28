@@ -4,13 +4,19 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getAllCars } from "../redux/actions/carsAction";
-import { Row,Col,Divider } from "antd";
+import { Row,Col,Divider,DatePicker } from "antd";
+import moment from 'moment'
+
+const {RangePicker} = DatePicker
 
 function BookingCar({match}) {
   const { cars } = useSelector((state) => state.carsReducer);
   //const {loading} = useSelector(state=>state.alertsReducer)
   const [car,setCar] = useState({})
   const dispatch = useDispatch();
+  const [from,setFrom]=useState()
+  const [to,setTo] = useState()
+  const [totalHours,setTotalHours] = useState(0)
 
   useEffect(() => {
     if (cars.length === 0) {
@@ -20,6 +26,17 @@ function BookingCar({match}) {
     }
     
   },[cars]);
+
+
+  function selectTimeslots(values) {
+    console.log(moment(values[0]).format('MMM DD yyyy HH:MM'))
+    console.log(moment(values[1]).format('MMM DD yyyy HH:MM'))
+
+    setFrom(moment(values[0]).format('MMM DD yyyy HH:MM'))
+    setTo(moment(values[1]).format('MMM DD yyyy HH:MM'))
+    setTotalHours(values[1].diff(values[0], 'hours'))
+    
+  }
   return (
     <DefaultLayout>
       <Row justify='center' className='d-flex align-items-center' style={{minHeight:'80vh'}}>
@@ -38,6 +55,15 @@ function BookingCar({match}) {
         <p>Max Capacity: {car.capacity}</p>
         
         </div>
+
+        <Divider type='horizontal' dashed>Select Timeslots</Divider>
+        <RangePicker showTime={{format:'HH:mm'}} format='MMM DD YYYY HH mm' onChange={selectTimeslots}/>
+
+        <div>
+        {totalHours}
+        </div>
+
+        
         
         
         </Col>

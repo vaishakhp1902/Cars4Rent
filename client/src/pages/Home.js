@@ -33,6 +33,7 @@ function Home() {
                   <div>
                     <p>{car.name}</p>
                     <p>{car.rentPerHour} Rent per hour</p>
+
                   </div>
 
                   <div>
