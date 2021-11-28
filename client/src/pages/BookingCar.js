@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getAllCars } from "../redux/actions/carsAction";
-import { Row,Col,Divider,DatePicker } from "antd";
+import { Row,Col,Divider,DatePicker,Checkbox } from "antd";
 import moment from 'moment'
 
 const {RangePicker} = DatePicker
@@ -17,6 +17,8 @@ function BookingCar({match}) {
   const [from,setFrom]=useState()
   const [to,setTo] = useState()
   const [totalHours,setTotalHours] = useState(0)
+  const [driver,setDriver] = useState(false)
+  const [totalAmount,setTotalAmount] = useState(0)
 
   useEffect(() => {
     if (cars.length === 0) {
@@ -26,6 +28,15 @@ function BookingCar({match}) {
     }
     
   },[cars]);
+
+
+  useEffect(() => {
+    setTotalAmount((totalHours*car.rentPerHour))
+
+    if(driver){
+      setTotalAmount(totalAmount+(30*totalHours))
+    }
+  }, [driver,totalHours])
 
 
   function selectTimeslots(values) {
@@ -49,10 +60,10 @@ function BookingCar({match}) {
         <Col lg={10} sm={24} xs={24}>
         <Divider type='horizontal' dashed>Car Details</Divider>
         <div className='text-right'>
-        <p>name: {car.name}</p>
-        <p>Rent: {car.rentPerHour}  per Hour</p>
-        <p>Fuel: {car.fuelType}</p>
-        <p>Max Capacity: {car.capacity}</p>
+        <p><b>name: </b>{car.name}</p>
+        <p><b>Rent: </b>{car.rentPerHour}  per Hour</p>
+        <p><b>Fuel: </b>{car.fuelType}</p>
+        <p><b>Max Capacity:</b> {car.capacity}</p>
         
         </div>
 
@@ -60,8 +71,22 @@ function BookingCar({match}) {
         <RangePicker showTime={{format:'HH:mm'}} format='MMM DD YYYY HH mm' onChange={selectTimeslots}/>
 
         <div>
-        {totalHours}
+       <p><b>Total Hours :</b>{totalHours}</p> 
+       <p><b>Rent per hour : </b>{car.rentPerHour}</p>
+       <Checkbox onChange={(e)=>{
+         if(e.target.checked){
+           setDriver(true)
+         }
+         else {
+           setDriver(false)
+         }
+       }}>Driver Required ?</Checkbox>
+
+       <h3>Total Amount : {totalAmount}</h3>
+
         </div>
+
+
 
         
         
