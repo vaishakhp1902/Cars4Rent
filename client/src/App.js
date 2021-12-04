@@ -24,10 +24,9 @@ function App() {
 export default App;
 
 export function ProtectedRoute(props) {
-  if(localStorage.getItem('user')) {
-    return(<Route {...props}/>)
-  }
-  else{
-    return <Redirect to='/login'/>
+  if (localStorage.getItem("user")) {
+    return <Route {...props} />;
+  } else {
+    return <Redirect to="/login" />;
   }
 }

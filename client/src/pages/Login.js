@@ -38,7 +38,7 @@ function Login() {
               label="Password"
               rules={[{ required: true }]}
             >
-              <Input.Password  />
+              <Input.Password />
             </Form.Item>
 
             <button className="btn-1">Login</button>
