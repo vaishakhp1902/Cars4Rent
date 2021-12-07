@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/cars4rent/static/css/main.4c7c27a2.chunk.css",
-    "main.js": "/cars4rent/static/js/main.61c4274c.chunk.js",
-    "main.js.map": "/cars4rent/static/js/main.61c4274c.chunk.js.map",
-    "runtime-main.js": "/cars4rent/static/js/runtime-main.323072b3.js",
-    "runtime-main.js.map": "/cars4rent/static/js/runtime-main.323072b3.js.map",
-    "static/css/2.4dca5ddc.chunk.css": "/cars4rent/static/css/2.4dca5ddc.chunk.css",
-    "static/js/2.5f04479f.chunk.js": "/cars4rent/static/js/2.5f04479f.chunk.js",
-    "static/js/2.5f04479f.chunk.js.map": "/cars4rent/static/js/2.5f04479f.chunk.js.map",
-    "static/js/3.1a93b6d2.chunk.js": "/cars4rent/static/js/3.1a93b6d2.chunk.js",
-    "static/js/3.1a93b6d2.chunk.js.map": "/cars4rent/static/js/3.1a93b6d2.chunk.js.map",
-    "index.html": "/cars4rent/index.html",
-    "static/css/2.4dca5ddc.chunk.css.map": "/cars4rent/static/css/2.4dca5ddc.chunk.css.map",
-    "static/css/main.4c7c27a2.chunk.css.map": "/cars4rent/static/css/main.4c7c27a2.chunk.css.map",
-    "static/js/2.5f04479f.chunk.js.LICENSE.txt": "/cars4rent/static/js/2.5f04479f.chunk.js.LICENSE.txt"
+    "main.css": "/Cars4Rent/static/css/main.4c7c27a2.chunk.css",
+    "main.js": "/Cars4Rent/static/js/main.61c4274c.chunk.js",
+    "main.js.map": "/Cars4Rent/static/js/main.61c4274c.chunk.js.map",
+    "runtime-main.js": "/Cars4Rent/static/js/runtime-main.5e608014.js",
+    "runtime-main.js.map": "/Cars4Rent/static/js/runtime-main.5e608014.js.map",
+    "static/css/2.4dca5ddc.chunk.css": "/Cars4Rent/static/css/2.4dca5ddc.chunk.css",
+    "static/js/2.7167858b.chunk.js": "/Cars4Rent/static/js/2.7167858b.chunk.js",
+    "static/js/2.7167858b.chunk.js.map": "/Cars4Rent/static/js/2.7167858b.chunk.js.map",
+    "static/js/3.1a93b6d2.chunk.js": "/Cars4Rent/static/js/3.1a93b6d2.chunk.js",
+    "static/js/3.1a93b6d2.chunk.js.map": "/Cars4Rent/static/js/3.1a93b6d2.chunk.js.map",
+    "index.html": "/Cars4Rent/index.html",
+    "static/css/2.4dca5ddc.chunk.css.map": "/Cars4Rent/static/css/2.4dca5ddc.chunk.css.map",
+    "static/css/main.4c7c27a2.chunk.css.map": "/Cars4Rent/static/css/main.4c7c27a2.chunk.css.map",
+    "static/js/2.7167858b.chunk.js.LICENSE.txt": "/Cars4Rent/static/js/2.7167858b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.323072b3.js",
+    "static/js/runtime-main.5e608014.js",
     "static/css/2.4dca5ddc.chunk.css",
-    "static/js/2.5f04479f.chunk.js",
+    "static/js/2.7167858b.chunk.js",
     "static/css/main.4c7c27a2.chunk.css",
     "static/js/main.61c4274c.chunk.js"
   ]
