@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/vaishakhp1902/cars4rent.git"
   },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.14.13"
+},
   "author": "Vaishakh",
   "license": "MIT",
   "bugs": {

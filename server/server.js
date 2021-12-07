@@ -13,4 +13,4 @@ app.use("/api/users/", require("./routes/usersRoute"));
 app.use("/api/bookings/", require("./routes/bookingsRoute"));
 
 app.get("/", (req, res) => res.send("Hello World!"));
-app.listen(port, () => console.log(`Node server started on${port}!`));
+app.listen(process.env.PORT || port, () => console.log(`Node server started on${port}!`));
